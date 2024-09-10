@@ -3,4 +3,9 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
+  server: {
+    proxy: {
+      '/api': 'https://workout-buddy-1-sal0.onrender.com'
+    }
+  }
 });

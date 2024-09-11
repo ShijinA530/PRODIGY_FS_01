@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      '/api': 'https://workout-buddy1-99mz.onrender.com'
+      '/api': 'http://localhost:4000'
     }
   }
 });
